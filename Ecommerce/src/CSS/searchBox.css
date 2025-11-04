@@ -1,0 +1,15 @@
+.searchBox {
+  width: 250px;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid white;
+}
+input {
+  transition: all 0.3s ease;
+}
+.search {
+  text-align: center;
+  margin-top: 50px;
+  transition: all 0.3s ease;
+}
