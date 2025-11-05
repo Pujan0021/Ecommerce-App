@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import EcommerceList from "./Components/EcommerceList";
 import { fetchApi } from "../API/api";
-import FilterProducts from "./Components/FilterProducts";
 import NavBar from "./Components/Navbar";
 
 function App() {
