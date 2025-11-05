@@ -10,6 +10,6 @@ input {
 }
 .search {
   text-align: center;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   transition: all 0.3s ease;
 }

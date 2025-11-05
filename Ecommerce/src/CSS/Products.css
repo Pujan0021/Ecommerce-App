@@ -57,6 +57,7 @@ body {
   color: white;
   padding: 5px;
   border-radius: 5px;
+  cursor: pointer;
 }
 .productDescription {
   font-size: 12px;
