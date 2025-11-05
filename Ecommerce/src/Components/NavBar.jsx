@@ -6,7 +6,7 @@ function NavBar({ searchQuery, setSearchQuery }) {
       <div className="navbar">
         <ul className="navItems">
           <li>
-            <a href="">Home</a>
+            <a href="#">Home</a>
           </li>
           <li>
             <a href="#">
@@ -17,10 +17,10 @@ function NavBar({ searchQuery, setSearchQuery }) {
             </a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a href="#">Contact</a>
           </li>
           <li>
-            <a href="">LogIn</a>
+            <a href="#">LogIn</a>
           </li>
         </ul>
       </div>

@@ -1,15 +1,23 @@
 import "../CSS/searchBox.css";
-function FilterProducts({ product, searchQuery, setSearchQuery }) {
+import { useState } from "react";
+function FilterProducts({ searchQuery, setSearchQuery }) {
+  const [inputValue, setInputValue] = useState("");
   return (
     <>
       <div className="search">
         <input
           className="searchBox"
-          type="text"
           placeholder="Search items"
-          onChange={(e) => setSearchQuery(e.target.value)}
-          value={searchQuery}
+          type="text"
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
         />
+        <button
+          className="searchButton"
+          onClick={() => setSearchQuery(inputValue)}
+        >
+          Search
+        </button>
       </div>
     </>
   );
