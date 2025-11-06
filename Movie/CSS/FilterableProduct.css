@@ -11,7 +11,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 16px;
   transition: transform 0.2s ease;
-  height: 600px;
+  height: 630px;
 }
 
 .product-card:hover {
@@ -23,4 +23,8 @@
   border-radius: 8px;
   margin-bottom: 12px;
   height: 400px;
+}
+.reaction {
+  text-align: center;
+  font-size: 25px;
 }

@@ -1,0 +1,17 @@
+.navBar {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.807);
+  align-items: center;
+  padding: 15px;
+  border-radius: 30px;
+}
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  color: white;
+}

@@ -1,5 +1,5 @@
 import "../CSS/FilterableProduct.css";
-function FilterableProduct({ product = [], query = "" }) {
+function FilterableProduct({ product, query }) {
   const filteredProducts = product.filter((item) => {
     const title = item.original_title || item.title || item.name || "";
     return title.toLowerCase().includes(query.toLowerCase());
@@ -15,8 +15,11 @@ function FilterableProduct({ product = [], query = "" }) {
               alt={item.original_title || item.title}
               className="product-image"
             />
-            <h3>{item.original_title || item.title}</h3>
-            <p>{item.overview.split(" ").slice(0, 6).join(" ") + "...."}</p>
+            <h3>
+              {item.original_title.split(" ").slice(0, 1).join("") ||
+                item.title.split(" ").slice(0, 2).join("")}
+            </h3>
+            <p>{item.overview.split(" ").slice(0, 4).join(" ") + "...."}</p>
             <p>
               <strong>Release Date:</strong> {item.release_date}
             </p>
@@ -24,6 +27,7 @@ function FilterableProduct({ product = [], query = "" }) {
               <strong>Rating:</strong> ⭐ {item.vote_average} ({item.vote_count}{" "}
               votes)
             </p>
+            <p className="reaction">🤍</p>
           </div>
         ))
       ) : (

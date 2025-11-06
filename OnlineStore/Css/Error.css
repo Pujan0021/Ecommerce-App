@@ -1,0 +1,14 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: 80vh;
+}
+.subContainer {
+  display: flex;
+  /* justify-content: center; */
+}
+img {
+  height: 400px;
+  width: 400px;
+}

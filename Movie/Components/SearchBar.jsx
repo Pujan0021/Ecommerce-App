@@ -13,6 +13,9 @@ function SearchBar({ onSearch }) {
         type="text"
         placeholder="Search Movie"
         onChange={(e) => setInputValue(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key === "Enter") handleSearchClick();
+        }}
       />
       <button className="searchBtn" onClick={handleSearchClick}>
         Search
