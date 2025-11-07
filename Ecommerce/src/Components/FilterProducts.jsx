@@ -1,6 +1,6 @@
 import "../CSS/searchBox.css";
 import { useState } from "react";
-function FilterProducts({ searchQuery, setSearchQuery }) {
+function FilterProducts({ setSearchQuery }) {
   const [inputValue, setInputValue] = useState("");
   return (
     <>
